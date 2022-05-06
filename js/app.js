@@ -1,6 +1,11 @@
 document.getElementById('form-Task').addEventListener('submit', saveTask);
- 
-// Save new To-Do
+
+////Save Task
+////Reset Form
+////Delete Task
+////Show Task
+
+// Save Task
 function saveTask(e) {
  
   let title = document.getElementById('title').value;
@@ -21,16 +26,16 @@ function saveTask(e) {
     tasks.push(task);
     localStorage.setItem('tasks', JSON.stringify(tasks));
   }
- 
+  
   getTasks();
  
-  // Reset form-Task
+// Reset Task Form
   document.getElementById('form-Task').reset();
   e.preventDefault();
  
 }
  
-// Delete To-Do 
+// Delete Task
 function deleteTask(title) {
  
   let tasks = JSON.parse(localStorage.getItem('tasks'));
@@ -44,10 +49,18 @@ function deleteTask(title) {
   getTasks();
 }
  
-// Show To-Do List
+// Show Task List
 function getTasks() {
  
-  let tasks = JSON.parse(localStorage.getItem('tasks'));
+ let tasks = JSON.parse(localStorage.getItem('tasks'));
+  
+//Adding a sort!
+ tasks.sort(function(a, b) {
+   var textA = a.title.toUpperCase();
+   var textB = b.title.toUpperCase();
+   return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+ });
+
   let tasksView = document.getElementById('tasks');
   tasksView.innerHTML = '';
  
@@ -72,7 +85,6 @@ function getTasks() {
        </div>
       </div>`;
   }
- 
 }
  
 getTasks();
