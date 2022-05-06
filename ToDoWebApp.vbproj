@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{9BFEEA45-F69B-4094-8983-D25DA7EC790C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>ToDoWebApp</RootNamespace>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Console</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitlab-ci.yml" />
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\push-to-checkout.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\master" />
+    <None Include=".git\objects\02\8a6b395e9484dc6ffd74f5b796547bfabbe85d" />
+    <None Include=".git\objects\05\a9ee00318a465e29187a832d0abb5b60b83a7a" />
+    <None Include=".git\objects\09\9ad2429b9ab7498fe97cd11bcd7192e005e534" />
+    <None Include=".git\objects\12\6713880ae7dc9d8cdf448a699d91b210b05ff4" />
+    <None Include=".git\objects\16\e85cdacdf3b6c1f5d18629567dd532f9c19beb" />
+    <None Include=".git\objects\2c\c3687c63bce9ce82d8de58b02c9e1be04b0867" />
+    <None Include=".git\objects\38\626181566456bbd1ab980189add87c50ffdbf1" />
+    <None Include=".git\objects\3a\cae056a61962a8ed7ef0cadb7f870ca64ca8fd" />
+    <None Include=".git\objects\45\669fba5ad02f0ba4467eacb7ebe9e3fa371034" />
+    <None Include=".git\objects\4d\6e3d054e385f48560afe21e03909cc3651dbb9" />
+    <None Include=".git\objects\57\7ee1c6279e73d8fcc14ae19da599dfef49d7b9" />
+    <None Include=".git\objects\62\33cb71f1b267a90e3ce6ec782ace33e7d0d586" />
+    <None Include=".git\objects\64\237acf98233616c0966c8497e42a1281edbfc3" />
+    <None Include=".git\objects\6e\cbdae63f3d97970a30d494739860efadc8b88a" />
+    <None Include=".git\objects\6f\635115790b68d617fc3a0cbbf52f476bbe5f43" />
+    <None Include=".git\objects\73\bddf3f4c78d88d5de1b137fa8e89c8ce221a19" />
+    <None Include=".git\objects\75\703e034b998bbcba040bec4340f71bb44c57c9" />
+    <None Include=".git\objects\7a\c27aaf2597ffc7be2f1d1b8212f080562d64a2" />
+    <None Include=".git\objects\84\f7d86f1331c4cc38603139b907b8d1a51ebc60" />
+    <None Include=".git\objects\86\b6845bc342029a92ad908781435f95f000fabb" />
+    <None Include=".git\objects\8a\45c816e6cac79769086309ac38c957b20c06b7" />
+    <None Include=".git\objects\8c\3cc54d60da79a9915ae0cff9676e013367f089" />
+    <None Include=".git\objects\91\15f7a82663cc033b0c284f214cde2bffabd464" />
+    <None Include=".git\objects\93\86b0f244223d0a1d2e8ece97af57765828d831" />
+    <None Include=".git\objects\95\e2353d26a17551f76085319d20ee6a507c93f0" />
+    <None Include=".git\objects\a6\ff487d58200b7c08c35ac409c21c600b5adf55" />
+    <None Include=".git\objects\ac\b345b4f88775466d608b1f58bfac6d11e414e4" />
+    <None Include=".git\objects\ad\7d5d29c0cb6d5f349cdec98540b1dfc0be1514" />
+    <None Include=".git\objects\b8\e6a4abb1d8e5b079932d10cf16b3dc05f2698b" />
+    <None Include=".git\objects\c5\ca5829d5a3614e5900d2fc1c515e992f95c7fe" />
+    <None Include=".git\objects\ce\908ca9aa8bf56a14a5846fa378e9bd0b0a0ce9" />
+    <None Include=".git\objects\cf\0a845872413f6a9d1c60cd41404466110e8144" />
+    <None Include=".git\objects\d1\784d4e192526366fdabe1fff37e0ba9d22a113" />
+    <None Include=".git\objects\da\f538aa4f7d2e075818202629745e4abfe22801" />
+    <None Include=".git\objects\dd\1a8c0bae35098bc733c183b86da291dc285976" />
+    <None Include=".git\objects\e9\3686529618400e9fec9ff947cafcecb9f0fdb9" />
+    <None Include=".git\objects\f3\693a5640661e7022b95f4b85eda5915313d55d" />
+    <None Include=".git\objects\fe\5b342eccb51ce3fac06d038050938a23717247" />
+    <None Include=".git\ORIG_HEAD" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\master" />
+    <None Include=".vscode\launch.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\todowebapp\v16\.suo" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="images\christmas-black.webp" />
+    <None Include="images\grey_wash_wall.webp" />
+    <None Include="images\wheat.webp" />
+    <None Include="readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".git\ms-persist.xml" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\style.css" />
+    <Content Include="images\background.jpg" />
+    <Content Include="images\morocco-blue.png" />
+    <Content Include="index.html" />
+    <Content Include="js\app.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

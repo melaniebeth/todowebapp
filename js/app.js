@@ -1,5 +1,6 @@
 document.getElementById('form-Task').addEventListener('submit', saveTask);
 
+
 ////Save Task
 ////Reset Form
 ////Delete Task
@@ -48,18 +49,31 @@ function deleteTask(title) {
   localStorage.setItem('tasks', JSON.stringify(tasks));
   getTasks();
 }
- 
+
+
+ldclient.on('ready', getTasks);
+ldclient.on('change', getTasks);
+
 // Show Task List
 function getTasks() {
  
- let tasks = JSON.parse(localStorage.getItem('tasks'));
-  
+let tasks = JSON.parse(localStorage.getItem('tasks'));
+
 //Adding a sort!
- tasks.sort(function(a, b) {
+  sortFlagValue = ldclient.variation('AutoSort', false);
+  console.log(sortFlagValue);
+
+  if (sortFlagValue)
+ {
+  console.log(sortFlagValue);
+  tasks.sort(function(a, b) {
    var textA = a.title.toUpperCase();
    var textB = b.title.toUpperCase();
-   return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
- });
+   return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;});
+}
+
+
+
 
   let tasksView = document.getElementById('tasks');
   tasksView.innerHTML = '';
@@ -87,4 +101,4 @@ function getTasks() {
   }
 }
  
-getTasks();
+//getTasks();

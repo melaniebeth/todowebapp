@@ -10,10 +10,14 @@
     <link rel="stylesheet" href="css/style.css">
 
     <title>Todo List Web App </title>
+
+    <!-- Use LaunchDarkly sdk LD-tag -->  
+    <script src="node_modules/launchdarkly-js-client-sdk/dist/ldclient.min.js"></script>
+
+
 </head>
 
 <body>
-
     <nav class="navbar navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">To-Do List Web App</a>
@@ -61,7 +65,34 @@
         </div>
 
     </div>
+    <script>
 
+function getUser()
+{
+    let userinput = prompt("Please enter your name");
+    if (userinput != null) 
+    {   
+        return userinput;
+    }
+    else
+    {   
+        getUser();
+    }
+}
+
+var username = getUser();
+var randomkey = Math.random().toString(36).slice(2);
+var user = {
+        name: username,
+        key: randomkey
+      };
+
+
+      const ldclient = LDClient.initialize('62754f8c259c6d1551033f66', user);
+    
+    </script>
+  
+     
     <script src="js/app.js"></script>
 
 </body>
