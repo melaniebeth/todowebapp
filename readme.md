@@ -4,7 +4,9 @@
 
 *The App*
 
-The app itself is simple.  It simply accepts a task (and description) of an item on a "to do" list, and stores it for you to complete.   Chrome is the recommended browser of choice.  While the app is designed for single user - I added a user prompt at runtime for the user to input their name.  This allows some fun experimentation with the feature flags!  The files in the source code that have been updated for LaunchDarkly are: app.js, and index.html.    The app currently stores the tasks in order of entry --- newest on the bottom.   I will be adding a feature that alphabetizes the task names.   Tasks usually aren't completed in alpha-order, but it's a fun, easy adjustment - and we'll be rolling it out in a way that targets certain individuals only.  And of course, we can always hit the kill-switch if needed!
+The app itself is simple.  It simply accepts a task (and description) of an item on a "to do" list, and stores it for you to complete.   Chrome is the recommended browser of choice.  While the app is designed for single user - I added a user prompt at runtime for the user to input their name.  This allows some fun experimentation with the feature flags!  The files in the source code that have been updated for LaunchDarkly are: app.js, and index.html.    The app currently stores the tasks in order of entry --- newest on the bottom.   I will be adding a feature that alphabetizes the task names.   Tasks usually aren't completed in alpha-order, but it's a fun, easy adjustment - and we'll be rolling it out in a way that targets certain individuals only.  And of course, we can always hit the kill-switch if needed!   To add a new item to the To-Do list, simply fill out the notecard form, and click save.  Saved items will show on the right hand side.
+
+![image-20220506183747988](C:\Users\mbmsd\AppData\Roaming\Typora\typora-user-images\image-20220506183747988.png)
 
 *The Code*
 
