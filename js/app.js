@@ -50,30 +50,24 @@ function deleteTask(title) {
   getTasks();
 }
 
-
 ldclient.on('ready', getTasks);
 ldclient.on('change', getTasks);
 
 // Show Task List
 function getTasks() {
  
-let tasks = JSON.parse(localStorage.getItem('tasks'));
+  let tasks = JSON.parse(localStorage.getItem('tasks'));
 
-//Adding a sort!
+  //Adding our new feature, a SORT
   sortFlagValue = ldclient.variation('AutoSort', false);
-  console.log(sortFlagValue);
-
+ 
   if (sortFlagValue)
- {
-  console.log(sortFlagValue);
-  tasks.sort(function(a, b) {
-   var textA = a.title.toUpperCase();
-   var textB = b.title.toUpperCase();
-   return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;});
-}
-
-
-
+  {
+    tasks.sort(function(a, b) {
+    var textA = a.title.toUpperCase();
+    var textB = b.title.toUpperCase();
+    return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;});
+  }
 
   let tasksView = document.getElementById('tasks');
   tasksView.innerHTML = '';
