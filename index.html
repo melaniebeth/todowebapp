@@ -66,33 +66,28 @@
 
     </div>
     <script>
+        // Prompt for the username for the Feature Flags
+        function getUser()
+        {       
+            let userinput = prompt("Please enter your name");
+            if (userinput != null) 
+                {return userinput;}
+            else {getUser();}
+        }
 
-function getUser()
-{
-    let userinput = prompt("Please enter your name");
-    if (userinput != null) 
-    {   
-        return userinput;
-    }
-    else
-    {   
-        getUser();
-    }
-}
+        var username = getUser();
+        var randomkey = Math.random().toString(36).slice(2);
+        var user = {
+                    name: username,
+                    key: randomkey
+                   }
 
-var username = getUser();
-var randomkey = Math.random().toString(36).slice(2);
-var user = {
-        name: username,
-        key: randomkey
-      };
-
-
-      const ldclient = LDClient.initialize('62754f8c259c6d1551033f66', user);
-    
+        //Initialize the LaunchDarkly Client
+        //UPDATE ldSDKKey as needed
+        const ldSDKKey = '62754f8c259c6d1551033f66';
+        const ldclient = LDClient.initialize(ldSDKKey, user);  
     </script>
-  
-     
+    
     <script src="js/app.js"></script>
 
 </body>
