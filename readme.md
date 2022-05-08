@@ -30,23 +30,29 @@ I will assume the user has a LaunchDarkly account ready, and has chosen a Projec
 2. You will need to edit the index.html file (located in the main folder).   Use the code editor of your choice.
 3. Within LaunchDarkly's console: Go to your "Account Settings", and locate your "Projects".   Click on the project to which you are associating the code.
 4. Next, copy the Client-side ID of the Environment you wish to use.  (JavaScript requires the Client-side ID).
-   <img src="https://github.com/melaniebeth/todowebapp/blob/master/images/image-20220506170612455.png" alt="image-20220506170612455" width="600" />
+
+   <img src="https://github.com/melaniebeth/todowebapp/blob/master/images/image-20220506170612455.png" alt="image-20220506170612455" width="750" />
 5. Paste it into the assignment area of the ldKey variable within the index.html file, as indicated by the red box below.  Leave the single quotation marks surrounding it.  Save the file.
+
    <img src="https://github.com/melaniebeth/todowebapp/blob/master/images/image-20220506170955387.png" width="500" />
 6. Next, we will return to the LaunchDarkly console and setup the Feature Flag.   Ensure the JavaScript SDK is associated with your Project/Environment:
+
    <img src="https://github.com/melaniebeth/todowebapp/blob/master/images/image-20220506171450420.png" width="400" />
 7. In the appropriate Project/Environment, select "Feature Flags" from the left-hand menu.
 8. Click "Create Flag"
+
    ![image-20220506172645600](https://github.com/melaniebeth/todowebapp/blob/master/images/image-20220506172645600.png)
 9. Fill out the Feature Flag details as indicated below:
 
-<img src="https://github.com/melaniebeth/todowebapp/blob/master/images/image-20220506172603340.png" width="800" />
+<img src="https://github.com/melaniebeth/todowebapp/blob/master/images/image-20220506172603340.png" width="700" />
 
 10. Once you click "Save flag" the properties will open up.   Under "Target users who match these rules" -- click "+ Add rules".
-    ![image-20220506172940552](https://github.com/melaniebeth/todowebapp/blob/master/images/)
+
+    ![image-20220506172940552](https://github.com/melaniebeth/todowebapp/blob/master/images/image-20220506172940552.png)
 
 11. Add a new rule based on the user name, as shown below.
-    ![image-20220506173213227](https://github.com/melaniebeth/todowebapp/blob/master/images/)
+
+    ![image-20220506173213227](https://github.com/melaniebeth/todowebapp/blob/master/images/image-20220506173213227.png)
 
 12. Compile and launch the source code!  The index.html is the starting point.
 
